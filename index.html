@@ -7,94 +7,115 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<title>FLexi</title>
+		<title>Flexi</title>
 	</head>
 	<body>
-		<nav>
-			<i id="button1" class="fas fa-bars" onclick="showmenu()"></i>
-			<ul>
-				<li onclick="showmenu()" id="button2">
-					AUTORIJBEWIJS
-					<i class="fas fa-caret-down"></i>
-					<ul>
-						<li><a href="">behalen</a></li>
-						<li><a href="">wanneer</a></li>
-					</ul>
-				</li>
-				<li onclick="showmenu()" id="button3">
-					MOTORRIJBEWIJS
-					<i class="fas fa-caret-down"></i>
-					<ul>
-						<li><a href="">behalen</a></li>
-						<li><a href="">wanneer</a></li>
-					</ul>
-				</li>					
-				<li><a href="">THEORIELES</a></li>
-				<li><a href="">OPFRIS CURSUS</a></li>
-				<li><a href="">CONTACT</a></li>
-			</ul>
-		</nav>
-		<div id="container">
+		<div id="bovenBalk">
+			<div class="contact">
+				<i class="fas fa-phone">--- --- --</i>
+				<i class="fab fa-whatsapp-square">--- --- --</i>
+				<i class="fas fa-clock">Ma - Zo: 8:00 - 22:00</i>
+				<i class="fas fa-tachometer-alt">Dashboard</i>
+				<span class="socialM">
+					<i class="fab fa-facebook-square"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-twitter-square"></i>
+				</span>
+			</div>
+		</div>
+		<div id="container">	
 			<header>
 				<img src="images/logo.png" alt="logo">
-			</header>
-			<div>
-				<div>
-					<button onclick="image1()"></button>
+			</header>	
+			<nav id="navi">
+				<i id="button1" class="fas fa-bars"></i>
+				<ul>
+					<li id="button2">
+						AUTORIJBEWIJS
+						<i class="fas fa-caret-down"></i>
+						<ul>
+							<li><a href="">behalen</a></li>
+							<li><a href="">wanneer</a></li>
+						</ul>
+					</li>
+					<li id="button3">
+						MOTORRIJBEWIJS
+						<i class="fas fa-caret-down"></i>
+						<ul>
+							<li><a href="">behalen</a></li>
+							<li><a href="">wanneer</a></li>
+						</ul>
+					</li>					
+					<li><a href="">THEORIELES</a></li>
+					<li><a href="">OPFRIS CURSUS</a></li>
+					<li><a href="">CONTACT</a></li>
+				</ul>
+			</nav>
+			<div id="frontImage">
+				<h2>Een rijschool</h2>
+				<p>Die meer dan alleen een rijschool is</p>
+				<div class="iButton">
+					<button onclick="image(0, this)"></button>
+					<button onclick="image(1, this)"></button>
+					<button onclick="image(2, this)"></button>
 				</div>
 			</div>
-			<section>
-				<div class="titles">
-					<i class="fas fa-car-side"></i>
-					<h2>PROEFLES</h2>
-				</div>
-				<hr>
-				<p>
-					Weet u het nog niet zeker maar wilt u het 
-					toch even proberen bij flexi. Dat kan, want 
-					met een vrijblijvende intakeles zit jij nergens
-					aan vast. Jij voelt meteen of er een klik is
-					tussen jou en de rijinstructeur. Is er geen klik,
-					dan zijn er nog andere FLEXI rijinstructeurs.
-					Ook bij andere rijinstructeurs geldt de 
-					vrijblijvende intakeles! Wel zo mooi.
-				</p>
-				<a href="">GRATIS proefles</a>
-			</section>
-			<section>
-				<div class="titles">
-					<i class="fas fa-map"></i>
-					<h2>LOCATIES</h2>
-				</div>
-				<hr>
-				<p>
-					Onze rijinstricteurs zijn verspreid over wel
-					bijna heel Nederland. Er is dus bijna altijd
-					wel een rijinstructeur bij jou in de buurt. Is er
-					bij jou in de buurt nog geen FLEXI rijschool?
-					Bel dan even met ons. Wij kijken dan samen
-					of we toch een FLEXI rijinstructeur voor jou 
-					kunnen regelen. Klik <a href="">hier</a> de locaties.
-				</p>
-			</section>
-			<section>
-				<div class="titles">
-					<i class="fas fa-graduation-cap"></i>
-					<h2>RIJLESSEN</h2>
-				</div>
-				<hr>
-				<p>
-					De rijlessen van FLEXI worden op basis van een
-					instructiekaart voorbereid en uitgevoerd. Op de
-					instructiekaart houd de FLEXI rijinstructeur
-					jouw voorderingen in de gaten. Ook gebruiken de
-					meeste FLEXI rijinstructeurs een dashcame,
-					zodat de les of een deel van de les teruggekeken
-					wordt. Hier halen jij en jouw FLEXI rijinstructeur
-					de pas en nav en bespreekt dit met jou.
-				</p>
-			</section>
+			<div class="sContainer">
+				<section>
+					<div class="titles">
+						<i class="fas fa-car-side"></i>
+						<h2>PROEFLES</h2>
+					</div>
+					<hr>
+					<p>
+						Weet u het nog niet zeker maar wilt u het 
+						toch even proberen bij flexi. Dat kan, want 
+						met een vrijblijvende intakeles zit jij nergens
+						aan vast. Jij voelt meteen of er een klik is
+						tussen jou en de rijinstructeur. Is er geen klik,
+						dan zijn er nog andere FLEXI rijinstructeurs.
+						Ook bij andere rijinstructeurs geldt de 
+						vrijblijvende intakeles! Wel zo mooi.
+					</p>
+					<a href="">GRATIS proefles</a>
+				</section>
+				<section>
+					<div class="titles">
+						<i class="fas fa-map"></i>
+						<h2>LOCATIES</h2>
+					</div>
+					<hr>
+					<p>
+						Onze rijinstricteurs zijn verspreid over wel
+						bijna heel Nederland. Er is dus bijna altijd
+						wel een rijinstructeur bij jou in de buurt. Is er
+						bij jou in de buurt nog geen FLEXI rijschool?
+						Bel dan even met ons. Wij kijken dan samen
+						of we toch een FLEXI rijinstructeur voor jou 
+						kunnen regelen. Klik <a href="">hier</a> de locaties.
+					</p>
+				</section>
+				<section>
+					<div class="titles">
+						<i class="fas fa-graduation-cap"></i>
+						<h2>RIJLESSEN</h2>
+					</div>
+					<hr>
+					<p>
+						De rijlessen van FLEXI worden op basis van een
+						instructiekaart voorbereid en uitgevoerd. Op de
+						instructiekaart houd de FLEXI rijinstructeur
+						jouw voorderingen in de gaten. Ook gebruiken de
+						meeste FLEXI rijinstructeurs een dashcame,
+						zodat de les of een deel van de les teruggekeken
+						wordt. Hier halen jij en jouw FLEXI rijinstructeur
+						de pas en nav en bespreekt dit met jou.
+					</p>
+				</section>
+			</div>
 			<iframe src="https://www.youtube.com/embed/Jnb5DpzPwww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<footer>&copy;Patrique Fernando van den Boom</footer>
 		</div>
+		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
